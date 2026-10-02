@@ -1,0 +1,65 @@
+{
+  "report": "Cyber Security Report — Settembre 2026",
+  "period": "2026-09-01/2026-09-30",
+  "date_field": "discovered (publication on leak site)",
+  "extracted_on": "2026-10-02",
+  "source": "ransomware.live API v2 /victims/2026/09",
+  "unit": "claims published on leak sites (not confirmed attacks)",
+  "totals": {
+    "claims": 788,
+    "active_groups": 76,
+    "claims_without_country": 82
+  },
+  "top_group": {
+    "group": "The Gentlemen",
+    "claims": 102,
+    "share_pct": 12.9,
+    "claims_in_top4_days": 94
+  },
+  "chart_a_top_groups": [
+    {"group": "The Gentlemen", "claims": 102},
+    {"group": "Qilin", "claims": 74},
+    {"group": "Storm", "claims": 37},
+    {"group": "Krybit", "claims": 34},
+    {"group": "SafePay", "claims": 32}
+  ],
+  "chart_b_top_sectors": {
+    "note": "Excludes 'Not Found' (91) and 'Other' (71)",
+    "data": [
+      {"sector": "Manufacturing", "claims": 133},
+      {"sector": "Professional Services", "claims": 91},
+      {"sector": "Technology", "claims": 90},
+      {"sector": "Healthcare", "claims": 71},
+      {"sector": "Retail & E-Commerce", "claims": 48}
+    ]
+  },
+  "chart_c_top_countries": [
+    {"country": "United States", "claims": 250},
+    {"country": "Germany", "claims": 34},
+    {"country": "Canada", "claims": 27},
+    {"country": "Italy", "claims": 26},
+    {"country": "Brazil", "claims": 26},
+    {"country": "United Kingdom", "claims": 25},
+    {"country": "India", "claims": 23},
+    {"country": "France", "claims": 17},
+    {"country": "Argentina", "claims": 17},
+    {"country": "Spain", "claims": 16}
+  ],
+  "chart_c_europe": [
+    {"country": "Germany", "claims": 34},
+    {"country": "Italy", "claims": 26},
+    {"country": "United Kingdom", "claims": 25},
+    {"country": "France", "claims": 17},
+    {"country": "Spain", "claims": 16},
+    {"country": "Switzerland", "claims": 10}
+  ],
+  "top_group_publishing_days": [
+    {"date": "2026-09-07", "claims": 19},
+    {"date": "2026-09-15", "claims": 30},
+    {"date": "2026-09-26", "claims": 20},
+    {"date": "2026-09-30", "claims": 25},
+    {"date": "other days", "claims": 8}
+  ],
+  "chart_d_shodan": null,
+  "chart_d_note": "Shodan data unavailable — values not included."
+}

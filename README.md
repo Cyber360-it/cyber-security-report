@@ -1,6 +1,6 @@
-# Cyber Security Report — Exposure Checks
+# Cyber Security Report
 
-Script di verifica **read-only** collegati alla rubrica mensile *Cyber Security Report* pubblicata su LinkedIn.
+Report mensili di threat intelligence ransomware, con fonti, dati verificati e script di verifica **read-only**. Sono collegati alla rubrica *Cyber Security Report* pubblicata su LinkedIn.
 
 Ogni mese il report analizza il gruppo ransomware più attivo sui leak site e le tecniche documentate da fonti affidabili (MITRE ATT&CK, vendor di threat intelligence). Questa repository trasforma quell'analisi in un controllo concreto che puoi eseguire sui tuoi sistemi Windows.
 
@@ -9,11 +9,13 @@ Ogni mese il report analizza il gruppo ransomware più attivo sui leak site e le
 
 ---
 
-## Check disponibili
+## Report disponibili
 
-| Mese | Gruppo analizzato | Script | Dettagli |
-|---|---|---|---|
-| Settembre 2026 | The Gentlemen | [`Exposure-Check.ps1`](checks/2026-09-the-gentlemen/Exposure-Check.ps1) | [README](checks/2026-09-the-gentlemen/README.md) |
+| Mese | Gruppo analizzato | Report | Script | Dati |
+|---|---|---|---|---|
+| Settembre 2026 | The Gentlemen | [Report](reports/2026-09-the-gentlemen/README.md) | [`Exposure-Check.ps1`](reports/2026-09-the-gentlemen/Exposure-Check.ps1) | [`chart-data.json`](reports/2026-09-the-gentlemen/chart-data.json) |
+
+Ogni cartella mensile contiene: report con fonti e mapping MITRE ATT&CK, script di verifica, dati dei grafici in JSON e infografica.
 
 ---
 
@@ -31,12 +33,12 @@ Ogni mese il report analizza il gruppo ransomware più attivo sui leak site e le
 
 ### 1. Scarica lo script
 
-Dalla pagina del check del mese, clicca su **Exposure-Check.ps1** → pulsante **Download raw file**.
+Dalla cartella del report del mese, clicca su **Exposure-Check.ps1** → pulsante **Download raw file**.
 
 Oppure da PowerShell:
 
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Cyber360-it/cyber-security-report/main/checks/2026-09-the-gentlemen/Exposure-Check.ps1" -OutFile ".\Exposure-Check.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Cyber360-it/cyber-security-report/main/reports/2026-09-the-gentlemen/Exposure-Check.ps1" -OutFile ".\Exposure-Check.ps1"
 ```
 
 ### 2. Verifica l'integrità (consigliato)
@@ -99,7 +101,7 @@ Ogni riga riporta `RunOn`, `Hostname`, area, controllo, valore rilevato, esito e
 
 ## Exposure score
 
-Lo score è **deterministico**: ogni condizione ha un peso fisso, documentato nel README del check.
+Lo score è **deterministico**: ogni condizione ha un peso fisso, documentato nel report del mese.
 
 | Score | Livello |
 |---|---|
